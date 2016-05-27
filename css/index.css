@@ -1,0 +1,84 @@
+*{padding: 0;margin: 0;box-sizing: border-box;}
+		img{border: 0;}
+			a{text-decoration: none;}
+			ul{list-style: none;}
+		body{font-family: "微软雅黑";}
+			.section{background-image: url(../upload/img/s1.jpg);background-size:cover;}
+			.s2{background-image: url(../upload/img/s2.jpg) ;}
+			.s3{background-image: url(../upload/img/s3.jpg) ;}
+			.s4{background-image: url(../upload/img/s4.jpg) ;}
+			.s5{background-image: url(../upload/img/s5.jpg) ;}
+			.s6{background-image: url(../upload/img/s6.jpg) ;}
+			.s7{background-image: url(../upload/img/s7.jpg) ;}
+			.s8{background-image: url(../upload/img/s8.jpg) ;color: #e2b16a;}
+			.section ul{background-color:rgba(0,0,0,.7);border-radius: 5px;}
+			.section ul li a img{width:100%;height: 100%;}
+			.section ul li{float: left;margin-top: 15px;margin-left: 16px;}
+			.section ul li a{display: inline-block;width: 100px;height: 70px;border: 3px solid rgba(255,255,255,.7);transition: all 1s;}
+			.section ul li a:hover{transform: scale(1.2,1.2);}
+			
+			
+			.s1 h1 img{position: absolute;right: 80px;bottom: 30px;}
+			.s2 h1 img{position: absolute;top: 70px;left: -1280px;}
+			.s3 h1 img{position: absolute;top: 120px;left: -1280px;}
+			.s4 h1 img{position: absolute;top: 50px;left: -1420px;}
+			.s5 h1 img{position: absolute;bottom:100px;right: -1300px;}
+			.s6 h1 img{position: absolute;top:100px;right: -1200px;}
+			.s7 h1 img{position: absolute;top:100px;left:-120%;}
+			.s8 h1 img{position: absolute;bottom:80px;left:-122%;}
+			
+			
+			.s2 ul{width: 255px;height: 185px;position: absolute;right: -1260px;bottom: 42px;}
+			.s3 ul{width: 367px;height: 185px;position: absolute;bottom: 70px;right: -1280px;}
+			.s4 ul{width: 255px;height: 185px;position: absolute;right: -1250px;top: 130px;}
+			.s5 ul{width: 130px;height: 185px;position: absolute;left: -1240px;bottom: 72px;}
+			.s6 ul{width: 255px;height: 185px;position: absolute;left: -1900px;bottom: 42px;}
+			
+			
+			
+			.asi{width: 830px;height: 236px;background-color: rgba(5,88,70,.7);position: absolute;top: 230px;right: -1200px;}
+			ul{list-style: none;}
+			.asi p{margin: 50px;font-size: 30px;color: #FFFFFF;}
+			.asi p span{display: block;}
+			.asi8{width: 340px;height: 205px;background-color: rgba(0,0,0,.7);font-size: 13px;line-height: 1.5em;border-radius: 5px;position: absolute;left:-1300px;top: -1160px;}
+			.asi8 h4{font-weight: normal;font-size: 14px;padding-top: 15px;padding-left: 15px;}
+			.asi8 p{padding: 0 15px;}
+			.asid8{font-size: 14px;position: absolute;right: -1200px;bottom: 95px;}
+			.asid8 img{margin-bottom: 20px;}
+			.foot8{height: 35px; width: 100%;background-color: rgba(0,0,0,.7);color: #055846;text-align: center;position: absolute;bottom: 0;font-size: 12px;left: 0;}
+			.foot8 p{margin-top: 14px;}
+		
+			#menu{height: 70px;width: 100%;background-color: rgba(0,0,0,.8);position: fixed;top: 0;left: 0;z-index: 100;}
+			#menu .logo{display: inline-block;height: 100%;width: 480px;background-color: #000000;float: left;text-align: center;margin-right: 50px;}
+			#menu .logo img{height: 100%;width: auto;}
+			
+			
+			#menu ul{position: absolute;right: 170px;}
+			.men_li{float: left;width: 70px;text-align: center;margin: 0 5px;}
+			.men_li a{color: #FFFFFF;display: inline-block;width: 100%;font-size: 13px;height: 100%;}
+			.men_li a span{display: inline-block}
+			.men_li a:hover{background-color: rgb(5,88,70);border-bottom: 3px solid rgb(192,149,86);}
+			
+			.men_li .menu_span{height: 70px;}
+			.men_li .menu_span span{margin-top: 45px;}
+			/*.men_li .menu_span:hover{}*/
+			.men_li .menu_span:hover span{margin-top:0;line-height: 70px;}
+			
+			
+			.men_li .menu_span2{height: 50px;}
+			.men_li .menu_span2 span{margin-top:0;line-height: 50px;}
+			/*.men_li .menu_span2:hover{background-color: rgb(5,88,70);border-bottom: 3px solid rgb(192,149,86);}*/
+			.men_li .menu_span2:hover span{line-height: 18px;}
+			
+			
+			
+			/*#menu .menu_span2 span{display: inline-block;margin-top: 100px;}*/
+			/*#menu .menu_span2:hover span{margin-top:50px; line-height: 50px;}*/
+			#menu p{color: #FFFFFF;font-size: 12px;top: 5px;float: right;position: absolute;right: 35px;}
+			#menu p a{display: inline-block;color: #FFFFFF;font-size: 12px;margin: 0 10px;}
+			#menu p span a{color: rgb(192,130,77);}
+			
+			.footer{position: fixed;bottom: 10px;z-index: 100;left: 50%;}
+			.footer img{transition: all 1s;}
+			.footer img:hover{transform: scale(1.2,1.2);}
+			.footer .footer2{display: none;}

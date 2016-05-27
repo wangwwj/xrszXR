@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>闲云山庄</title>
+		<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css"/>
+		<!--<link rel="stylesheet" href="css/animate.min.css" />-->
+		<link rel="stylesheet" href="css/lightbox.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<script src="js/jquery-1.8.3.min.js"></script>
+		<script src="js/jquery.fullPage.js"></script>
+		
+		<style>
+		/*.ani{visibility: hidden;}*/
+		</style>
+		<script src="js/lightbox.js"></script>
+		<!--<script src="js/animate.js"></script>-->
+		<script>
+			$(function(){
+				$("#main").fullpage({
+//					sectionsColor:['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90','#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],
+//					continuousVertical:true,
+					menu:"#menu",
+					anchors:['page1','page2','page3','page4','page5','page6','page7','page8'],
+					
+					afterLoad:function(anchorLink,index){
+						
+						if(index>=1){
+							$(".footer #footer1 img").click(function(){
+							ind=index+1;
+							$("#footer1").attr("href","#page"+ind);				
+							});
+						}
+						if(index==1){
+                            $(".men_li a").removeClass("menu_span2");
+							$("#menu,#menu li").height(70);
+							$("#menu .logo,#menu p").show();
+							$(".s1 h1 img").animate({"right":"80px","transition":"0.5s"});
+						}
+						if(index==2){
+							$(".s2 h1 img").animate({"left":"280px","transition":"0.5s"});
+							$(".s2 ul").animate({"right":"260px","transition":"1s"});
+						}
+						if(index==3){
+							$(".s3 h1 img").animate({"left":"280px","transition":"0.5s"});
+							$(".s3 ul").animate({"right":"700px","transition":"1s"});
+						}
+						if(index==4){
+							$(".s4 h1 img").animate({"left":"420px","transition":"0.5s"});
+							$(".s4 ul").animate({"right":"250px","transition":"1s"});
+						}
+						if(index==5){
+							$(".s5 h1 img").animate({"right":"300px","transition":"0.5s"});
+							$(".s5 ul").animate({"left":"240px","transition":"1s"});
+						}
+						if(index==6){
+							$(".s6 h1 img").animate({"right":"200px","transition":"0.5s"});
+							$(".s6 ul").animate({"left":"900px","transition":"1s"});
+						}
+						if(index==7){
+							$(".s7 h1 img").animate({"left":"20%","transition":"0.5s"});
+							$(".s7 .asi").animate({"right":"120px","transition":"1s"});
+						}
+						if(index>1){
+							$(".men_li a").addClass("menu_span2");
+							$("#menu,#menu li").height(50);
+							$("#menu .logo,#menu p").hide();							
+						}
+						if(index==8){
+							$(".footer .footer1").hide();
+							$(".footer .footer2").show();
+							$(".s8 h1 img").animate({"left":"22%","transition":"0.5s"});
+							$(".s8 .asi8").animate({"left":"300px","top": "160px","transition":"1s"});
+							$(".s8 .asid8").animate({"right":"200px","transition":"0.5s"});
+						}
+					},
+					onLeave:function(index,direction){
+						if(index==1){
+							$(".s1 h1 img").animate({"right":"-1180px","transition":"0.5s"})
+						}
+						if(index==2){
+							$(".s2 h1 img").animate({"left":"-1280px","transition":"0.5s"})
+							$(".s2 ul").animate({"right":"-1260px","transition":"1s"})
+						}
+						if(index==3){
+							$(".s3 h1 img").animate({"left":"-1280px","transition":"0.5s"});
+							$(".s3 ul").animate({"right":"-1280px","transition":"1s"});
+						}
+						if(index==4){
+							$(".s4 h1 img").animate({"left":"-1420px","transition":"0.5s"});
+							$(".s4 ul").animate({"right":"-1250px","transition":"1s"});
+						}
+						if(index==5){
+							$(".s5 h1 img").animate({"right":"-1300px","transition":"0.5s"});
+							$(".s5 ul").animate({"left":"-1240px","transition":"1s"});
+						}
+						if(index==6){
+							$(".s6 h1 img").animate({"right":"-1200px","transition":"0.5s"});
+							$(".s6 ul").animate({"left":"-1900px","transition":"1s"});
+						}
+						if(index==7){
+							$(".s7 h1 img").animate({"left":"-120%","transition":"0.5s"});
+							$(".s7 .asi").animate({"right":"-1118px","transition":"1s"});
+						}
+						if(index==8){
+							$(".footer .footer1").show();
+							$(".footer .footer2").hide();
+							$(".s8 h1 img").animate({"left":"-122%","transition":"0.5s"});
+							$(".s8 .asi8").animate({"left":"-1300px","top": "-160px","transition":"1s"});
+							$(".s8 .asid8").animate({"right":"-1200px","transition":"0.5s"});
+						}
+					}
+					
+				})
+				
+			})
+		</script>
+	</head>
+	<body>
+		<div id="menu">
+			<a href=""class="logo"><img src="images/logo-1_03 (1).png" alt="" /></a>
+			<ul>
+				<li data-menuanchor="page1"class="men_li"><a href="#page1" class="menu_span"><span>首页</span></a></li>
+				<li data-menuanchor="page2"class="men_li"><a href="#page2" class="menu_span"><span>世外桃源</span></a></li>
+				<li data-menuanchor="page3"class="men_li"><a href="#page3" class="menu_span"><span>源生滋味</span></a></li>
+				<li data-menuanchor="page4"class="men_li"><a href="#page4" class="menu_span"><span>星星作伴</span></a></li>
+				<li data-menuanchor="page5"class="men_li"><a href="#page5" class="menu_span"><span>创想意境</span></a></li>
+				<li data-menuanchor="page6"class="men_li"><a href="#page6" class="menu_span"><span>闲云圣景</span></a></li>
+				<li data-menuanchor="page7"class="men_li"><a href="#page7" class="menu_span"><span>活动</span></a></li>
+				<li data-menuanchor="page8"class="men_li"><a href="#page8" class="menu_span"><span>联系我们</span></a></li>
+			</ul>	
+			<p><a href="">中文版</a>|<span><a href="">ENGLISH</a></span></p>
+		</div>
+	<!--	//导航-->
+		<div id="main">
+			
+			<!--s1-->
+			<div class="section s1">
+				
+				<h1><img src="images/x1_03 (1).png" alt="" /></h1>
+			</div>
+			
+			<!--s 2-->
+			<div class="section s2">
+				<h1><img src="images/01_03.png" alt="" /></h1>
+				<ul  class="ani" data-ani="bounceInDown">
+					<li><a href="upload/20141106133043.jpg" class="thickbox" rel="gallery-plants" data-lightbox="pic"><img src="upload/20141106133043.jpg" alt=""/></a></li>
+					<li><a href="upload/20141106133101.jpg" class="thickbox" rel="gallery-plants" data-lightbox="pic"><img src="upload/20141106133101.jpg" alt=""/></a></li>
+					<li><a href="upload/20141106133106.jpg" class="thickbox" rel="gallery-plants" data-lightbox="pic"><img src="upload/20141106133106.jpg" alt=""/></a></li>
+					<li><a href="upload/20141106133111.jpg" class="thickbox" rel="gallery-plants" data-lightbox="pic"><img src="upload/20141106133111.jpg" alt=""/></a></li>
+				</ul>
+			</div>
+			
+			<!--s 3-->
+			<div class="section s3">
+				<h1><img src="images/02_03.png" alt="" /></h1>
+				<ul>
+					<li><a href="upload/20141106133124.jpg"class="thickbox" rel="gallery-plants" data-lightbox="pic3"><img src="upload/20141106133124.jpg" alt=""/></a></li>
+					<li><a href="upload/20141106133129.jpg"class="thickbox" rel="gallery-plants" data-lightbox="pic3"><img src="upload/20141106133129.jpg" alt=""/></a></li>
+					<li><a href="upload/20141106133134.jpg"class="thickbox" rel="gallery-plants" data-lightbox="pic3"><img src="upload/20141106133134.jpg" alt=""/></a></li>
+					<li><a href="upload/20141106133139.jpg"class="thickbox" rel="gallery-plants" data-lightbox="pic3"><img src="upload/20141106133139.jpg" alt=""/></a></li>
+					<li><a href="upload/20141106133144.jpg"class="thickbox" rel="gallery-plants" data-lightbox="pic3"><img src="upload/20141106133144.jpg" alt=""/></a></li>
+					<li><a href="upload/20141106133159.jpg"class="thickbox" rel="gallery-plants" data-lightbox="pic3"><img src="upload/20141106133159.jpg" alt=""/></a></li>
+				</ul>
+			</div>
+			
+			<!--s 4-->
+			<div class="section s4">
+				<h1><img src="images/03_03.png"/></h1>
+				<ul>
+					<li><a href="upload/20141106133207.jpg"class="thickbox" rel="gallery-plants" data-lightbox="pic4"><img src="upload/20141106133207.jpg" alt=""/></a></li>
+					<li><a href="upload/20141106133212.jpg"class="thickbox" rel="gallery-plants" data-lightbox="pic4"><img src="upload/20141106133212.jpg" alt=""/></a></li>
+					<li><a href="upload/20141106133218.jpg"class="thickbox" rel="gallery-plants" data-lightbox="pic4"><img src="upload/20141106133218.jpg" alt=""/></a></li>
+					<li><a href="upload/20141106133224.jpg"class="thickbox" rel="gallery-plants" data-lightbox="pic4"><img src="upload/20141106133224.jpg" alt=""/></a></li>
+				</ul>
+			</div>
+			
+			<!--s 5-->
+			<div class="section s5">
+				<h1><img src="images/05_03.png"/></h1>
+				<ul>
+					<li><a href="upload/20141106133231.jpg"class="thickbox" rel="gallery-plants" data-lightbox="pic5"><img src="upload/20141106133231.jpg" alt=""/></a></li>
+					<li><a href="upload/20141106133248.jpg"class="thickbox" rel="gallery-plants" data-lightbox="pic5"><img src="upload/20141106133248.jpg" alt=""/></a></li>
+				</ul>
+			</div>
+			
+			<!--s 6-->
+			<div class="section s6">
+				<h1><img src="images/06_03.png"/></h1>
+				<ul>
+					<li><a href="upload/20141106133256.jpg"class="thickbox" rel="gallery-plants" data-lightbox="pic6"><img src="upload/20141106133256.jpg" alt=""/></a></li>
+					<li><a href="upload/20141106133301.jpg"class="thickbox" rel="gallery-plants" data-lightbox="pic6"><img src="upload/20141106133301.jpg" alt=""/></a></li>
+					<li><a href="upload/20141106133305.jpg"class="thickbox" rel="gallery-plants" data-lightbox="pic6"><img src="upload/20141106133305.jpg" alt=""/></a></li>
+					<li><a href="upload/20141106133309.jpg"class="thickbox" rel="gallery-plants" data-lightbox="pic6"><img src="upload/20141106133309.jpg" alt=""/></a></li>
+				</ul>
+			</div>
+			
+			<!--s 7-->
+			<div class="section s7">
+				<h1><img src="images/07_03.png"/></h1>
+				<div class="asi">
+					<p>活动时间：<span>12月15日至2月15日</span></p>
+				</div>
+			</div>
+			
+			<!--s 8-->
+			<div class="section s8">
+				<h1><img src="images/08_03.png"/></h1>
+				<div class="asi8">
+					<h4>公司简介</h4>
+					<p> 北京叠翠谷旅游开发有限公司全资开发建设的闲云山房项目，位于北京市怀柔区喇叭沟门原始森林自然保护区内，总占地面积3000亩，是集生态养殖、种植、餐饮、住宿、观光、会议、健康养生为一体的综合性度假区。拥有自然景观十多处，特色别墅30栋，餐厅1栋，多功能厅1栋。此生态区是北京仅有的非雾霾环境区域，是大自然赐予我们的天然大氧吧。
+                    </p>
+				</div>
+				<div class="asid8">
+					<img src="images/l1 (1).png" alt="" />
+					<p>联系人：张先生</p>
+					<p>联系电话：010-61670298</p>
+					<p>手机：010-13581784389</p>
+					<p>地      址：北京市怀柔区喇叭沟门原始森林公园大门口</p>
+				</div>
+				<div class="foot8"><p>Copyright © 1998 - 2014 Tencent. All Rights Reserved.北京彩满堂数字科技有限公司设计制作</p></div>
+					
+		</div>
+		
+		<!--ed-->
+			</div>
+	
+	<div class="footer">
+			<a  href="#page2" class="footer1" id="footer1"><img src="images/gd_03 (1).png" alt="" /></a>
+			<a   href="#page1" class="footer2"><img src="images/gdd_03 (1).png" alt="" /></a>
+			</div>
+
+	</body>
+</html>
